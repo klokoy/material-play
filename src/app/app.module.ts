@@ -1,18 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { NgModule, Component } from '@angular/core';
+import { MaterialModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
+
+import { ModelsComponent } from './models/models.component';
+import { ModelComponent } from './models/model.component';
 
 import { AppComponent } from './app.component';
 
+import appRoutes from './app.routes'; 
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ModelsComponent,
+    ModelComponent
   ],
   imports: [
+    MaterialModule.forRoot(),
     BrowserModule,
-    FormsModule,
-    HttpModule
+    appRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]

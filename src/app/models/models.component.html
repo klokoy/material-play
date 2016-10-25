@@ -1,0 +1,14 @@
+<md-card *ngFor="let model of models">
+
+	<md-card-title-group [routerLink]="model.id">
+		<img md-card-sm-image src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCh5KZu3vdmGojQcrAvo-Md5Yl33HOheWSrgQcsn2xDZLuCGfC">
+		<md-card-title>{{model.name}}</md-card-title>
+		<md-card-subtitle>{{model.name}}</md-card-subtitle>
+		<md-card-actions>
+			<button md-button><md-icon>cloud_download</md-icon></button>
+			<button md-button><md-icon>share</md-icon></button>
+		</md-card-actions>
+
+	</md-card-title-group>
+
+</md-card>
